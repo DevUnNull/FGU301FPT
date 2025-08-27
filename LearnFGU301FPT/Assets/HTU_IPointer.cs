@@ -28,6 +28,7 @@ public class HTU_IPointer : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
         // Lưu vị trí ban đầu của đối tượng
         originalPosition = transform.position;
+        
     }
 
     /// <summary>
@@ -99,4 +100,5 @@ public class HTU_IPointer : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         transform.position = eventData.position;
         Debug.Log("Dragging: " + gameObject.name);
     }
+
 }
