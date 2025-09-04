@@ -33,6 +33,7 @@ public class HowToUseGetComponent : MonoBehaviour
     HowToUseOnEnable HowToUseOnEnable;
     private void Start()
     {
+        // có thể sử dung FindObjectOfType<HowToUseOnEnable>(); nhưng sẽ tốn tài nguyên hơn
         HowToUseOnEnable = GetComponent<HowToUseOnEnable>(); // dùng kiểu này hoặc cũng có thể dùng bằng  [SerializeField] để kéo scrip HowToUseOnEnable vào
         HowToUseOnEnable.testGetComponent();
     }

@@ -27,6 +27,7 @@ public class HTU_PhysicsRaycast : MonoBehaviour
         // hit.collider : sẽ trả về null hoặc trả về tên của GameObject mà tia hit chạm vào + thêm chữ collider
         // hit.rigidbody : sẽ trả về null hoặc trả về tên của GameObject mà tia hit chạm vào + thêm chữ Rigidbody
         // hit.point : sẽ trả về 0,0 hoặc vị trí mà tia đang chỉ đến 
+        
         if (hit.collider != null)
         {
             Debug.Log("Nhân vật đang đứng trên mặt đất." + hit.point);
